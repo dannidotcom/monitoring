@@ -14,3 +14,13 @@ memory_usage() {
 disk_usage() {
     df -h | grep '^/dev/' | awk '{print "Disk Usage: "$5 " on "$1}'
 }
+
+# Afficher les résultats en temps réel
+while true
+do
+    echo "CPU Usage: $(cpu_usage)"
+    echo "$(memory_usage)"
+    echo "$(disk_usage)"
+    echo "----------------------------------"
+    sleep 5  # Pause de 5 secondes avant la prochaine itération
+done
