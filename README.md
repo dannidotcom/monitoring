@@ -1,5 +1,8 @@
 
-Ce script en shell permet de récupérer les informations clés sur les ressources du système (CPU, mémoire, espace disque) en temps réel.
+# Système de Surveillance
+
+Ce projet permet de surveiller les ressources système (CPU, mémoire, espace disque) en temps réel et de journaliser les résultats pour analyse ultérieure.
+
 
 ```bash
 #!/bin/bash
@@ -26,7 +29,7 @@ do
     echo "$(memory_usage)"
     echo "$(disk_usage)"
     echo "----------------------------------"
-    sleep 5  # Pause de 5 secondes avant la prochaine itération
+    sleep 1  # Pause de 1 secondes avant la prochaine itération
 done
 ```
 
