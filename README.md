@@ -1,4 +1,4 @@
-Étape 1 : Script en shell pour obtenir les informations système
+
 Ce script en shell permet de récupérer les informations clés sur les ressources du système (CPU, mémoire, espace disque) en temps réel.
 
 ```bash
@@ -30,7 +30,7 @@ do
 done
 ```
 
-Étape 2 : Script Python pour surveiller et enregistrer les données
+
 Le script suivant en Python appelle le script shell, capture les résultats et les enregistre dans un fichier journal pour analyse ultérieure.
 
 ```python
@@ -57,8 +57,8 @@ def log_system_resources(log_file):
             f.write(log_entry)
             print(log_entry)
 
-            # Pause de 5 secondes avant la prochaine surveillance
-            time.sleep(5)
+            # Pause de 1 secondes avant la prochaine surveillance
+            time.sleep(1)
 
 # Lancer la surveillance et journalisation
 if __name__ == "__main__":
@@ -74,7 +74,7 @@ Fonctionnement :
 
 Pour exécuter :
 
-1. Enregistrez le script shell (par exemple sous le nom `system_monitor.sh`) et rendez-le exécutable :
+1.  RendRE exécutable `system_monitor.sh` :
 ```bash
 chmod +x system_monitor.sh
 ```
@@ -84,4 +84,8 @@ chmod +x system_monitor.sh
 python3 system_monitor.py
 ```
 
-Ainsi, tu pourras surveiller ton serveur en temps réel tout en enregistrant les données importantes pour analyse.
+## Démonstration
+
+Voici un aperçu de l'interface de surveillance en temps réel :
+
+![Aperçu du système de surveillance](demo.png)
