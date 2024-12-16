@@ -52,4 +52,4 @@ python3 system_monitor.py
 
 Voici un aperçu de l'interface de surveillance en temps réel :
 
-![Aperçu du système de surveillance](demo.png)
+![Aperçu du système de surveillance](demo.gif)
